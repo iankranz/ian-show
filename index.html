@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>ian show</title>
+  </head>
+  <body class="flex flex-col relative">
+    <header class="w-full flex flex-col items-centermt-20 mb-10 mt-20">
+      <div id="logo" class="w-full flex flex-col items-center animate-bounce">
+        <img src="/wendell-tiny.png" class="ml-2" />
+        <h1>ian show</h1>
+      </div>
+    </header>
+
+    <main class="flex flex-col items-center mx-2 max-w-xl mb-20">
+      <h2 class="text-center font-light text-2xl mb-10">
+        A simple show for learning and entertainment
+      </h2>
+      <a href="https://youtube.com/@iankranz"
+        ><button class="bg-red-500 text-white mb-10">Check it out</button></a
+      >
+      <div class="flex flex-col gap-6 mb-10">
+        <p class="text-center">
+          If you made it to this page, you're probably like me: you don't know
+          that much. But that's okay! Lots of people like you are experts in the
+          handfull of things they do the most.
+        </p>
+        <p class="text-center">
+          That's why I made ian show,
+          <i>to learn about the stuff outside of what we do every day.</i>
+        </p>
+        <p class="text-center">
+          Join me while I interview people about the things that they know the
+          most about. It'll be fun, and you might just learn something.
+        </p>
+      </div>
+      <a
+        href="https://youtube.com/@iankranz"
+        class="underline text-black visited:text-black text-lg"
+        >Watch the first episode!</a
+      >
+    </main>
+
+    <footer class="h-14 w-full mx-2 flex justify-center items-center">
+      <div id="animate-button" class="flex h-fit gap-4 cursor-pointer">
+        <label>Animation on/off</label>
+        <input id="animate-checkbox" checked type="checkbox" />
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
