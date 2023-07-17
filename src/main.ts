@@ -21,9 +21,9 @@ function toggleAnimation() {
 animationButton?.addEventListener("click", toggleAnimation)
 logo?.addEventListener("click", toggleAnimation)
 
-setTimeout(() => {
-  if (!logo || !animationCheckbox) return
-  isAnimationEnabled = false
-  animationCheckbox.checked = isAnimationEnabled
-  logo.classList.remove("animate-bounce")
-}, 3490)
+// setTimeout(() => {
+//   if (!logo || !animationCheckbox) return
+//   isAnimationEnabled = false
+//   animationCheckbox.checked = isAnimationEnabled
+//   logo.classList.remove("animate-bounce")
+// }, 3490)
