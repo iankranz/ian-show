@@ -2,20 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>ian show</title>
   </head>
   <body class="flex flex-col relative">
     <header class="w-full flex flex-col items-centermt-20 mb-10 mt-20">
-      <div id="logo" class="w-full flex flex-col items-center animate-bounce">
-        <img src="/wendell-tiny.png" class="ml-2" />
+      <div
+        id="logo"
+        class="w-full flex flex-col items-center animate-bounce cursor-pointer"
+      >
+        <img src="./wendell-tiny.png" class="ml-2" />
         <h1>ian show</h1>
       </div>
     </header>
 
-    <main class="flex flex-col items-center mx-2 max-w-xl mb-20">
+    <main class="flex flex-col items-center mx-2 max-w-xl mb-10">
       <h2 class="text-center font-light text-2xl mb-10">
         A simple show for learning and entertainment
       </h2>
@@ -39,17 +42,32 @@
       </div>
       <a
         href="https://youtube.com/@iankranz"
-        class="underline text-black visited:text-black text-lg"
+        class="underline text-red-500 visited:text-red-500 text-lg"
         >Watch the first episode!</a
       >
     </main>
 
-    <footer class="h-14 w-full mx-2 flex justify-center items-center">
-      <div id="animate-button" class="flex h-fit gap-4 cursor-pointer">
+    <footer class="h-fit w-full mx-2 flex justify-center items-center flex-col">
+      <div class="flex flex-row gap-2 justify-center mb-4 w-full">
+        <a
+          class="text-white hover:text-white"
+          href="https://youtube.com/@iankranz"
+          ><button class="i-button">YouTube</button></a
+        >
+        <a class="text-white hover:text-white" href="https://blog.ianshow.com"
+          ><button class="i-button">Blog</button></a
+        >
+        <a
+          class="text-white hover:text-white"
+          href="https://discord.gg/a2TK9V5zMj"
+          ><button class="i-button">Discord</button></a
+        >
+      </div>
+      <div id="animate-button" class="flex gap-4 cursor-pointer">
         <label>Animation on/off</label>
         <input id="animate-checkbox" checked type="checkbox" />
       </div>
     </footer>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>

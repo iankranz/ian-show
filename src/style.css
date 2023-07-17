@@ -99,3 +99,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.i-button {
+  background-color: #555;
+  padding: 0.4em 0.8em;
+  border: white 1px;
+}

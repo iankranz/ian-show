@@ -19,6 +19,7 @@ function toggleAnimation() {
 }
 
 animationButton?.addEventListener("click", toggleAnimation)
+logo?.addEventListener("click", toggleAnimation)
 
 setTimeout(() => {
   if (!logo || !animationCheckbox) return
